@@ -1,35 +1,29 @@
-## Usage
+# Abyss Web
+Abyss is an advanced proxy service that provides modern unblocking for all users who use it.
 
-Those templates dependencies are maintained via [pnpm](https://pnpm.io) via `pnpm up -Lri`.
+# Setup and installation
 
-This is the reason you see a `pnpm-lock.yaml`. That being said, any package manager will work. This file can be safely be removed once you clone a template.
+Install the following software for your machine if you haven't already.
 
-```bash
-$ npm install # or pnpm install or yarn install
+```
+Node 18+
+Git
 ```
 
-## Port
+After installing, run the following commands in the folder you desire to install Abyss in.
 
-Change the port using the .env file in the root directory.  
+Ubuntu/Windows:
+```
+git clone https://github.com/AbyssServices/Abyss-Web
+cd Abyss-Web
+npm i
+npm start
+```
 
-## Available Scripts
+# Port change
 
-In the project directory, you can run:
+To change the port, go to .env in the root folder and change the port number.
 
-### `npm start`
+# License
 
-Runs the app.<br>
-
-The page will reload if you make edits.<br>
-
-### `npm run build`
-
-Builds the app for production to the `dist` folder.<br>
-It correctly bundles Solid in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
-
-## Deployment
-
-You can deploy the `dist` folder to any static host provider (netlify, surge, now, etc.)
+Read the license before you make any changes to this software.
