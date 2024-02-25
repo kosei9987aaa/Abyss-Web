@@ -58,7 +58,7 @@ export const Omnibox: Component = () => {
   };
 
   const handleInputChange = async (e: any) => {
-    const url = searchUtil(e.target.value, "https://www.google.com/search?q=");
+    const url = searchUtil(e.target.value, "https://www.google.com/search?q=%s");
     setInputValue((e.target as HTMLInputElement).value);
     try {
       const newQuery = e.target.value;
@@ -146,7 +146,7 @@ export const Omnibox: Component = () => {
           <div
             onclick={() =>
               handleSuggestion(
-                searchUtil(suggestion, "https://bing.com/search?q=%s")
+                searchUtil(suggestion, "https://www.google.com/search?q=%s")
               )
             }
           >
