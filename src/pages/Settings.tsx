@@ -74,7 +74,7 @@ export const Settings: Component = () => {
       <div class="my-2 text-3xl">Cloaking</div>
       <div class="mb-4">Disguise this tab.</div>
       <div class="flex flex-row">
-        <CloakButton title="Abyss" favicon="/../assets/logo.png" />
+        <CloakButton title="Abyss" favicon="https://intoabyss.org/logo.png" />
         <CloakButton title="Google" favicon="https://google.com/favicon.ico" />
         <CloakButton
           title="Google Docs"
