@@ -60,7 +60,7 @@ const showOmnibox = () => {
 };
 
 const submit = (e: any) => {
-  const url = searchUtil(e.target.value, "https://bing.com/search?q=%s");
+  const url = searchUtil(e.target.value, "https://www.google.com/search?q=%s");
   if (e.key === "Enter") {
     if (url !== "abyss://settings") {
       const iframe = document.getElementById(
