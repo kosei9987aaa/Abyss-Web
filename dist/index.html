@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <link rel="icon" id="iconny" href="/assets/logo-CtbAcAgo.png" />
+    <title>Abyss</title>
+    <script src="/uv/uv.bundle.js"></script>
+    <script src="/uv/uv.config.js"></script>
+    <script src="/dynamic/dynamic.config.js"></script>
+    <script>
+      if ("serviceWorker" in navigator) {
+        window.addEventListener("load", () => {
+          navigator.serviceWorker.register("/sw.js", {
+            scope: "/"
+          });
+        });
+      }
+    </script>
+    <script type="module" crossorigin src="/assets/index-D-AnZDzn.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-Cgw0ybAE.css">
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+
+  </body>
+</html>

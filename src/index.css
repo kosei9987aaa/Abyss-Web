@@ -1,0 +1,70 @@
+@font-face {
+  font-family: "Segoe";
+  src: url("/fonts/Segoe-UI.ttf") format("truetype");
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes gradientAnimate {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 200% 0%;
+  }
+}
+
+.segoe-ui {
+  font-family: "Segoe", sans-serif;
+}
+
+#root {
+  overflow: hidden;
+}
+
+@keyframes AnimationName {
+  0% {
+      background-position: 0% 50%;
+  }
+
+  50% {
+      background-position: 100% 50%;
+  }
+  100% {
+      background-position: 0% 50%;
+  }
+}
+.background {
+  background: linear-gradient(242deg, rgb(246, 86, 86), rgb(57, 60, 242)) 0% 0% / 200%;
+  animation: 9s ease 0s infinite normal none running AnimationName;
+}
+
+.modernScrollbar {
+  scrollbar-width: auto;
+  scrollbar-color: rgb(55, 65, 81);
+}
+
+.modernScrollbar::-webkit-scrollbar {
+    width: 5px;
+}
+
+.modernScrollbar::-webkit-scrollbar-thumb {
+  background-color: rgb(55, 65, 81);
+  border-radius: 3px;  
+}
